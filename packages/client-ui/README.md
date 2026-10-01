@@ -1,0 +1,1 @@
+# @cougr/client-ui\n\nShared framework-agnostic contract client primitives for Cougr Freighter clients. The factory validates the contract ID and RPC URL, while `requireTestnet` prevents signing on non-testnet networks.\n
