@@ -31,7 +31,7 @@ export const requireTestnet = client.requireTestnet;
 
 function assertContractConfigured(): void {
   if (!CONTRACT_ID.trim()) {
-    throw new ClientError('contractId and rpcUrl are required.');
+    throw new ClientError('Set VITE_CONTRACT_ID to the deployed turn-based contract ID.');
   }
   if (!StrKey.isValidContract(CONTRACT_ID)) {
     throw new ClientError('VITE_CONTRACT_ID is not a valid Soroban contract ID.');
